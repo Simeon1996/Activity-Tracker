@@ -5,7 +5,7 @@ public class ActivityTracker {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
 
-        TreeMap<Integer, TreeMap<String,Integer>> users = new TreeMap<>();
+        TreeMap<Integer, TreeMap<String, Integer>> users = new TreeMap<>();
 
         Integer dataLinesCounter = reader.nextInt();
 
@@ -21,16 +21,16 @@ public class ActivityTracker {
             Integer activity = Integer.parseInt(currentInput[2]);
 
             if(!users.containsKey(month)){
-                users.put(month,new TreeMap<>());
+                users.put(month, new TreeMap<>());
                 users.get(month).put(name,activity);
             }else {
                 if(users.get(month).containsKey(name)){
                     Integer activityStacker = users.get(month).get(name);
                     activityStacker += activity;
-                    users.get(month).put(name,activityStacker);
+                    users.get(month).put(name, activityStacker);
                 }
                 else{
-                    users.get(month).put(name,activity);
+                    users.get(month).put(name, activity);
                 }
             }
         }
@@ -41,10 +41,10 @@ public class ActivityTracker {
             String fixedOutput = "";
 
             for(String user : users.get(month).keySet()){
-                fixedOutput += String.format("%s(%d), ",user,users.get(month).get(user));
+                fixedOutput += String.format("%s(%d), ", user, users.get(month).get(user));
             }
 
-            System.out.println(fixedOutput.substring(0,fixedOutput.length() - 2));
+            System.out.println(fixedOutput.substring(0, fixedOutput.length() - 2));
         }
 
     }
