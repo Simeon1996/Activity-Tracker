@@ -14,5 +14,5 @@ Input
 The input comes from the console. At the first line a number n stays which says how many data lines will follow. Each of the next n lines holds a data in format <date> <user> <distance>. The input data will always be valid and in the format described. There is no need to check it explicitly.
 
 Output
-Print one line for each month (months are in ascending order). For each month print the users and the sum of distances for each one of them, in descending order in format <month>: <user>(<distance>), <user>(<distance>),…
+Print one line for each month (months are in ascending order). For each month print the users and the sum of distances for each one of them, in descending order.
 
