@@ -6,7 +6,7 @@ You are part of the server side application team of brand new and promising acti
 •	01/08/2014 Pesho 5600
 •	03/08/2014 Ivan 11400
 
-Write a program to aggregate the data and print the activity of each user per month. The months should be represented in ascending order. The users should be ordered alphabetically and the data should be represented in the following way: <month>: <user>(<distance>),  <user>(<distance>),… For the data above the output should be:
+Write a program to aggregate the data and print the activity of each user per month. The months should be represented in ascending order. The users should be ordered alphabetically.For the data above the output should be:
 •	7: Angel(11100), Pesho(3200)
 •	8: Ivan(11400), Pesho(5600)
 
